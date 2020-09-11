@@ -1,0 +1,33 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  ul {
+    overflow: hidden;
+
+    max-height: 0;
+    transition: max-height 300ms ease-out;
+  }
+
+  input:checked ~ ul {
+    max-height: 10em;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
